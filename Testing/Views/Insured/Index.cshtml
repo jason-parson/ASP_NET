@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ASP_NET.Models.Insured>
+
+<h2>Insured</h2>
+<table class="table">
+    <tr>
+        <th>INSURED_CODE</th>
+        <th>FIRST NAME</th>
+        <th>LAST NAME</th>
+        <th>AGE</th>
+        <th>VIN_NUM </th>
+        <th>AUTO MAKE </th>
+        <th>AUTO MODEL</th>
+        <th>AUTO YEAR </th>
+        <th>POLICY NUMBER</th>
+
+    </tr>
+
+    @foreach (var insured in Model)
+    {
+        <tr>
+            @*<td><a href=/Insured/ViewInsured/@insured.INSURED_CODE>@insured.INSURED_CODE</a></td>*@
+            <td>@insured.INSURED_CODE</td>
+            <td>@insured.IFNAME</td>
+            <td>@insured.ILNAME</td>
+            <td>@insured.AGE</td>
+            <td>@insured.ADDRESS</td>
+            <td>@insured.VIN_NUM</td>
+            <td>@insured.CAR_MAKE</td>
+            <td>@insured.CAR_MODEL/td>
+            <td>@insured.CAR_YEAR</td>
+            <td>@insured.POLICY_NUMBER</td>
+        </tr>
+
+    }
+</table>
+
